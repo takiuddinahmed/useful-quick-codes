@@ -22,7 +22,7 @@ async def main():
         await redis.publish("lax", data_json)
     finally:
         # Close the Redis connection
-        await redis.close()
+        await redis.aclose()
 
 if __name__ == "__main__":
     asyncio.run(main())
