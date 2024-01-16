@@ -9,6 +9,7 @@ def subscribe_to_stream(stream_handlers: List[any], group_name, consumer_name):
         handler = stream_handler["handler"]
 
         try:
+            print("Try to create")
             redis_client.xgroup_create(stream_name, group_name, mkstream=True)
         except Exception as e:
             print(e)
@@ -19,7 +20,7 @@ def subscribe_to_stream(stream_handlers: List[any], group_name, consumer_name):
             handler = stream_handler["handler"]
             
 
-            messages_list = redis_client.xreadgroup(group_name, consumer_name, {stream_name: '>'}, count=1, block=0)
+            messages_list = redis_client.xreadgroup(group_name, consumer_name, {stream_name: '>'}, count=1, block=100)
             for messages in messages_list:
                 stream, messages = messages
 
@@ -40,6 +41,13 @@ def user_deleted(data):
 
     print("User deleted", data['id'])
 
+def user_updated(data):
+
+    print("User updated", data)
+
+def user_test(data):
+    print("User test", data)
+
 handler_stream = [
     {
         "stream_name": "user_created",
@@ -48,6 +56,10 @@ handler_stream = [
     {
         "stream_name": "user_deleted",
         "handler": user_deleted
+    },
+    {
+        "stream_name": "user_test",
+        "handler": user_test
     }
 ]
 
