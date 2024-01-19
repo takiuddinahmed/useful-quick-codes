@@ -11,7 +11,7 @@ async def main():
         data = {
             "event": "agreement_created",
             "data": {
-                "agreement_id": "7d439a8c-3de5-4b6c-a188-e192333a6480",
+                "agreement_id": "a47b2e31-1a26-44f1-981d-bffb1fad895f",
                 "user_id": "0000",
             }
         }
