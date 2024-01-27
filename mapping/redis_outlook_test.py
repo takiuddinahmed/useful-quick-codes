@@ -33,21 +33,21 @@ async def publish_to_redis():
  
     data = {'event': 'new_mail_received', 
             'data': 
-                {'subject': None, 
+                json.dumps({'subject': None, 
                  'body': {'contentType': 'html', 'content': '<html><head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><div style="background-color:#ffe000; border:1px dotted #003333; padding:.8em"><span style="font-size:20pt; font-family:\'Cambria\',\'times new roman\',\'garamond\',serif; color:#ff0000"><b>EXTERNAL</b></span> </div><div><div dir="ltr">Yes, mail received...............</div></div></body></html>'}, 
                  'from': {'emailAddress': {'name': 'shahed jamil', 'address': 'shahedjamil108@gmail.com'}}, 
                  'toRecipients': [{'emailAddress': {'name': 'Shahed Jamil', 'address': 'sjamil@cognitus.com'}}], 
                  'receivedDateTime': '2023-12-18T16:20:29Z', 
                  'sentDateTime': '2023-12-18T16:20:11Z', 
                  "attachments": None,
-                 "plugin_connection_id": 1
+                 "plugin_connection_id": 2
                  
-                 }}
+                 })}
    
     try:
-        await redis.publish(
+        await redis.xadd(
             "outlook",
-            json.dumps(data),
+            data,
         )
         print("DONE")
     except Exception as e:

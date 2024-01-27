@@ -29,7 +29,7 @@ async def main():
             "event": "manual_trigger",
             "data": {
                 "text": "this is text",
-                "file": file_data,
+                "text": file_data,
                 "obj":"This is an object",
                 "agreement_id":"a47b2e31-1a26-44f1-981d-bffb1fad895f"
 

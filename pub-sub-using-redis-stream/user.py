@@ -14,4 +14,4 @@ if __name__ == "__main__":
     publish_to_stream('user_deleted',data,)
     # publish_to_stream('user_updated',data)
     # publish_to_stream('user_test',data)
-    print("data sent to stream",data)
+    print("data sent to stream", data)

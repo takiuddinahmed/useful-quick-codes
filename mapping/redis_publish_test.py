@@ -10,16 +10,16 @@ async def main():
     try:
         data = {
             "event": "agreement_created",
-            "data": {
+            "data": json.dumps({
                 "agreement_id": "a47b2e31-1a26-44f1-981d-bffb1fad895f",
                 "user_id": "0000",
-            }
+            })
         }
 
-        data_json = json.dumps(data)
+        # data_json = json.dumps(data)
 
         # Publish the message
-        await redis.publish("lax", data_json)
+        await redis.xadd("lax", data)
     finally:
         # Close the Redis connection
         await redis.aclose()
