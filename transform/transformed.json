@@ -1,0 +1,176 @@
+{
+  "rating": {
+    "type": "string",
+    "path": "rating"
+  },
+  "contract_number": {
+    "type": "string",
+    "path": "contract_number"
+  },
+  "solicitation_number": {
+    "type": "string",
+    "path": "solicitation_number"
+  },
+  "solicitation_type": {
+    "type": "string",
+    "path": "solicitation_type"
+  },
+  "date_issued": {
+    "type": "string",
+    "path": "date_issued"
+  },
+  "requisition/purchase_number": {
+    "type": "string",
+    "path": "requisition/purchase_number"
+  },
+  "name": {
+    "type": "string",
+    "path": "name"
+  },
+  "area_code": {
+    "type": "string",
+    "path": "area_code"
+  },
+  "number": {
+    "type": "string",
+    "path": "number"
+  },
+  "extension": {
+    "type": "string",
+    "path": "extension"
+  },
+  "email": {
+    "type": "string",
+    "path": "email"
+  },
+  "date": {
+    "type": "array[string]",
+    "path": "date"
+  },
+  "offer_date": {
+    "type": "string",
+    "path": "offer_date"
+  },
+  "award_date": {
+    "type": "string",
+    "path": "award_date"
+  },
+  "award_amount": {
+    "type": "string",
+    "path": "award_amount"
+  },
+  "standard_form": {
+    "type": "string",
+    "path": "standard_form"
+  },
+  "items": {
+    "type": "array[object]",
+    "path": "items",
+    "mapping": {
+      "item": {
+        "type": "string",
+        "path": "item"
+      },
+      "type": {
+        "type": "string",
+        "path": "type"
+      },
+      "supplies_or_services": {
+        "type": "string",
+        "path": "supplies_or_services"
+      },
+      "quantity": {
+        "type": "string",
+        "path": "quantity"
+      },
+      "unit": {
+        "type": "string",
+        "path": "unit"
+      },
+      "unit_price": {
+        "type": "string",
+        "path": "unit_price"
+      },
+      "amount": {
+        "type": "string",
+        "path": "amount"
+      },
+      "max_cost": {
+        "type": "string",
+        "path": "max_cost"
+      },
+      "base_fee": {
+        "type": "string",
+        "path": "base_fee"
+      },
+      "fixed_fee": {
+        "type": "string",
+        "path": "fixed_fee"
+      },
+      "subtotal_max_cost_plus_base": {
+        "type": "string",
+        "path": "subtotal_max_cost_plus_base"
+      },
+      "max_award_fee": {
+        "type": "string",
+        "path": "max_award_fee"
+      },
+      "total_max_cost_plus_fee": {
+        "type": "string",
+        "path": "total_max_cost_plus_fee"
+      },
+      "target_cost": {
+        "type": "string",
+        "path": "target_cost"
+      },
+      "target_fee": {
+        "type": "string",
+        "path": "target_fee"
+      },
+      "max_net_amt": {
+        "type": "string",
+        "path": "max_net_amt"
+      },
+      "tot_max_price": {
+        "type": "string",
+        "path": "tot_max_price"
+      },
+      "ceiling_price": {
+        "type": "string",
+        "path": "ceiling_price"
+      },
+      "total_tgt_cost_plus_fee": {
+        "type": "string",
+        "path": "total_tgt_cost_plus_fee"
+      },
+      "minimum_fee": {
+        "type": "string",
+        "path": "minimum_fee"
+      },
+      "maximum_fee": {
+        "type": "string",
+        "path": "maximum_fee"
+      },
+      "share_ratio_above_target": {
+        "type": "string",
+        "path": "share_ratio_above_target"
+      },
+      "share_ratio_below_target": {
+        "type": "string",
+        "path": "share_ratio_below_target"
+      },
+      "estimated_cost": {
+        "type": "string",
+        "path": "estimated_cost"
+      },
+      "total_est_cost_plus_fee": {
+        "type": "string",
+        "path": "total_est_cost_plus_fee"
+      }
+    }
+  },
+  "clauses": {
+    "type": "array[string]",
+    "path": "clauses"
+  }
+}
