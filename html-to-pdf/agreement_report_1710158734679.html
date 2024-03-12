@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agreement Report</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+            * {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .main__container {
+                width: 90%;
+                border: 1px solid #c6e1f9;
+            }
+            .main__header {
+                border: 1px solid #c6e1f9;
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 20px 32px 20px;
+            }
+            .header__text {
+                font-size: 24px;
+                font-family: "Inter";
+                color: #00325f;
+            }
+            .sections {
+                padding: 20px 20px;
+            }
+            .section__header {
+                background: #101828;
+                color: #fff;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .section__sub__header {
+                margin-top: 10px;
+                background: #f2f4f7;
+                border: 1px solid #eaecf0;
+                color: #101828;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .section__item {
+                padding: 16px;
+                gap: 16px;
+            }
+            .section__item__inner {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .section__item__text {
+                display: flex;
+                flex-direction: column;
+            }
+            .section__item__text__header {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .section__item__text__sub__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            table {
+                font-family: "Inter", sans-serif !important;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 8px !important;
+            }
+
+            td,
+            th {
+                border: 1px solid #eaecf0;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background: #f9fafb;
+                color: #667085;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            td {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .table__header {
+                text-transform: uppercase;
+            }
+            .activity_tab_containr {
+                margin-top: 10px;
+                border: 1px solid #eaecf0;
+                padding: 16px;
+                border-radius: 8px;
+            }
+            .activity__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__content {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__border {
+                border-bottom: 1px solid #eaecf0;
+                height: 1px;
+                margin: 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="main__header">
+                <h1 class="header__text">
+                    Agreement-yvw4v6
+                </h1>
+                <div>
+                    <img src="./Logo.png" alt="logo" height="30" width="150" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+            * {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .main__container {
+                width: 100%;
+                border: 1px solid #c6e1f9;
+            }
+
+            .main__header {
+                border: 1px solid #c6e1f9;
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 20px 32px 20px;
+            }
+
+            .header__text {
+                font-size: 24px;
+                font-family: "Inter";
+                color: #00325f;
+            }
+
+            .sections {
+                padding: 20px 20px;
+            }
+
+            .section__header {
+                background: #101828;
+                color: #fff;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .section__sub__header {
+                margin-top: 10px;
+                background: #f2f4f7;
+                border: 1px solid #eaecf0;
+                color: #101828;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            .section__item {
+                padding: 16px;
+                gap: 16px;
+            }
+
+            .section__item__inner {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+
+            .section__item__text {
+                margin-top: 15px;
+                flex: 0 0 48%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 48%;
+            }
+
+            .section__item__text__header {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .section__item__text__sub__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            table {
+                font-family: "Inter", sans-serif !important;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 8px !important;
+            }
+
+            td,
+            th {
+                border: 1px solid #eaecf0;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background: #f9fafb;
+                color: #667085;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            td {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .table__header {
+                text-transform: uppercase;
+            }
+
+            .activity_tab_containr {
+                margin-top: 10px;
+                border: 1px solid #eaecf0;
+                padding: 16px;
+                border-radius: 8px;
+            }
+
+            .activity__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .activity__content {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .activity__border {
+                border-bottom: 1px solid #eaecf0;
+                height: 1px;
+                margin: 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sections">
+                <h1 class="section__header">HEADER</h1>
+                
+                <h1 class="section__sub__header">
+                    Test Section
+                </h1>
+                <div class="section__item">
+                    <div class="section__item__inner">
+                        
+                        <div class="section__item__text">
+                            <p class="section__item__text__header">
+                                award_amount
+                            </p>
+                            <p class="section__item__text__sub__header">
+                                1234
+                            </p>
+                        </div>
+                        
+                        <!-- Add two empty columns -->
+                        <div class="section__item__text"></div>
+                        <div class="section__item__text"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+            * {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .main__container {
+                width: 90%;
+                border: 1px solid #c6e1f9;
+            }
+            .main__header {
+                border: 1px solid #c6e1f9;
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 20px 32px 20px;
+            }
+            .header__text {
+                font-size: 24px;
+                font-family: "Inter";
+                color: #00325f;
+            }
+            .sections {
+                padding: 20px 20px;
+            }
+            .section__header {
+                background: #101828;
+                color: #fff;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .section__sub__header {
+                margin-top: 10px;
+                background: #f2f4f7;
+                border: 1px solid #eaecf0;
+                color: #101828;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .section__item {
+                padding: 16px;
+                gap: 16px;
+            }
+            .section__item__inner {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .section__item__text {
+                display: flex;
+                flex-direction: column;
+            }
+            .section__item__text__header {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .section__item__text__sub__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            table {
+                font-family: "Inter", sans-serif !important;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 8px !important;
+            }
+
+            td,
+            th {
+                border: 1px solid #eaecf0;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background: #f9fafb;
+                color: #667085;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            td {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .table__header {
+                text-transform: uppercase;
+            }
+            .activity_tab_containr {
+                margin-top: 10px;
+                border: 1px solid #eaecf0;
+                padding: 16px;
+                border-radius: 8px;
+            }
+            .activity__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__content {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__border {
+                border-bottom: 1px solid #eaecf0;
+                height: 1px;
+                margin: 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sections">
+                <h1 class="section__header">LINE ITEMS</h1>
+                <table>
+                    <tr class="table__header">
+                        <th>Item Number</th>
+                        <th>HL Item Number</th>
+                        <th>Customer CLIN</th>
+                        <th>Item Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sections">
+                <h1 class="section__header">CLAUSES</h1>
+                <table>
+                    <tr class="table__header">
+                        <th>Number</th>
+                        <th>Title</th>
+                        <th>Effective date</th>
+                        <th>Prescribed at 48 CFR</th>
+                        <th>Prescription</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>970.5245-1</td>
+                        <td>Property--Alternate I.</td>
+                        <td>AUG 2016</td>
+                        <td>970.4501-1(b)</td>
+                        <td>The contracting officer shall insert the basic clause with its Alternate I in contracts with nonprofit contractors.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>970.5245-1</td>
+                        <td>Property</td>
+                        <td>AUG 2016</td>
+                        <td>970.4501-1(a)</td>
+                        <td>The contracting officer shall insert this clause in management and operating contracts. Paragraph (f)(1)(i)(c) of the clause applies to a non-profit contractor only to the extent specifically provided in the individual contract. Specific managerial personnel may be listed in paragraph (j), provided their listing is consistent with the clause and the DEAR.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>970.5244-1</td>
+                        <td>Contractor purchasing system</td>
+                        <td>AUG 2016</td>
+                        <td>970.4403</td>
+                        <td>The contracting officer shall insert this clause in all management and operating contracts.</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+            * {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .main__container {
+                width: 90%;
+                border: 1px solid #c6e1f9;
+            }
+            .main__header {
+                border: 1px solid #c6e1f9;
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 20px 32px 20px;
+            }
+            .header__text {
+                font-size: 24px;
+                font-family: "Inter";
+                color: #00325f;
+            }
+            .sections {
+                padding: 20px 20px;
+            }
+            .section__header {
+                background: #101828;
+                color: #fff;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .section__sub__header {
+                margin-top: 10px;
+                background: #f2f4f7;
+                border: 1px solid #eaecf0;
+                color: #101828;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .section__item {
+                padding: 16px;
+                gap: 16px;
+            }
+            .section__item__inner {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .section__item__text {
+                display: flex;
+                flex-direction: column;
+            }
+            .section__item__text__header {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .section__item__text__sub__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            table {
+                font-family: "Inter", sans-serif !important;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 8px !important;
+            }
+
+            td,
+            th {
+                border: 1px solid #eaecf0;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background: #f9fafb;
+                color: #667085;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            td {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .table__header {
+                text-transform: uppercase;
+            }
+            .activity_tab_containr {
+                margin-top: 10px;
+                border: 1px solid #eaecf0;
+                padding: 16px;
+                border-radius: 8px;
+            }
+            .activity__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__content {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__border {
+                border-bottom: 1px solid #eaecf0;
+                height: 1px;
+                margin: 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sections">
+                <h1 class="section__header">ACTIVITY</h1>
+                <div class="activity_tab_containr">
+                    
+                    <div>
+                        <p class="activity__header">
+                            Agreement Status Set to Draft
+                        </p>
+                        <p class="activity__content">
+                            2024-03-11 10:22:02.436386
+                        </p>
+                    </div>
+                    <div class="activity__border"></div>
+                    
+                    <div>
+                        <p class="activity__header">
+                            Agreement Updated
+                        </p>
+                        <p class="activity__content">
+                            2024-03-11 10:21:43.447416
+                        </p>
+                    </div>
+                    <div class="activity__border"></div>
+                    
+                    <div>
+                        <p class="activity__header">
+                            Agreement Updated
+                        </p>
+                        <p class="activity__content">
+                            2024-03-11 10:21:28.663057
+                        </p>
+                    </div>
+                    <div class="activity__border"></div>
+                    
+                    <div>
+                        <p class="activity__header">
+                            Agreement Updated
+                        </p>
+                        <p class="activity__content">
+                            2024-03-11 10:21:23.227642
+                        </p>
+                    </div>
+                    <div class="activity__border"></div>
+                    
+                    <div>
+                        <p class="activity__header">
+                            Agreement Created
+                        </p>
+                        <p class="activity__content">
+                            2024-03-11 10:21:18.357292
+                        </p>
+                    </div>
+                    <div class="activity__border"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+            * {
+                font-family: "Inter", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .main__container {
+                width: 90%;
+                border: 1px solid #c6e1f9;
+            }
+            .main__header {
+                border: 1px solid #c6e1f9;
+                display: flex;
+                justify-content: space-between;
+                padding: 32px 20px 32px 20px;
+            }
+            .header__text {
+                font-size: 24px;
+                font-family: "Inter";
+                color: #00325f;
+            }
+            .sections {
+                padding: 20px 20px;
+            }
+            .section__header {
+                background: #101828;
+                color: #fff;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .section__sub__header {
+                margin-top: 10px;
+                background: #f2f4f7;
+                border: 1px solid #eaecf0;
+                color: #101828;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .section__item {
+                padding: 16px;
+                gap: 16px;
+            }
+            .section__item__inner {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .section__item__text {
+                display: flex;
+                flex-direction: column;
+            }
+            .section__item__text__header {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .section__item__text__sub__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            table {
+                font-family: "Inter", sans-serif !important;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 8px !important;
+            }
+
+            td,
+            th {
+                border: 1px solid #eaecf0;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background: #f9fafb;
+                color: #667085;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            td {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .table__header {
+                text-transform: uppercase;
+            }
+            .activity_tab_containr {
+                margin-top: 10px;
+                border: 1px solid #eaecf0;
+                padding: 16px;
+                border-radius: 8px;
+            }
+            .activity__header {
+                color: #101828;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__content {
+                color: #98a2b3;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .activity__border {
+                border-bottom: 1px solid #eaecf0;
+                height: 1px;
+                margin: 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sections">
+                <h1 class="section__header">LINKED DOCUMENTS</h1>
+                <table>
+                    <tr class="table__header">
+                        <th>Agreement Name</th>
+                        <th>Created At</th>
+                        <th>Agreement Type</th>
+                        <th>Document</th>
+                        <th>Status</th>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="sections">
+                <h1 class="section__header">LINKED EXTERNAL DOCUMENTS</h1>
+                <table>
+                    <tr class="table__header">
+                        <th>Name</th>
+                        <th>URL</th>
+                        <th>Created At</th>
+                        <th>Updated At</th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
